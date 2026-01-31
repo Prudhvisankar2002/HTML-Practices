@@ -1,7 +1,7 @@
 # HTML-Practices
 # 🌐 HTML Learning Project
 
-This repository contains my practice work while learning **HTML** and basic **web development** concepts.
+This repository contains my practice work while learning **HTML** and basic **web development** concepts
 
 ---
 
