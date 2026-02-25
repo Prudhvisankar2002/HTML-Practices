@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Grid Layout</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto 2fr auto;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas:
+                "header header header"
+                "Lsidebar main-content rsidebar"
+                "footer footer footer";
+            gap: 15px;
+            height: 100vh;
+        }
+
+        .header-content-styles {
+            grid-area: header;
+            background-color: rgb(251, 247, 54);
+            text-align: center;
+            padding: 20px;
+            color: black;
+        }
+
+        .Location-content {
+            grid-area: Location;
+            color: green;
+            background-color: darkgoldenrod;
+            text-align: center;
+            height: 100px;
+            padding-top: 30px;
+        }
+
+        .main-content-style {
+            grid-area: main-content;
+            padding: 20px;
+            background-color:lightcoral ;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project-item {
+            border-radius: 30px;
+            background-color: rgb(224, 228, 98);
+            padding: 20px;
+            margin: 30px;
+            color: rgb(17, 14, 14);
+            text-align: center;
+        }
+
+        .Lsidebar-content-style {
+            grid-area: Lsidebar;
+            background-color: rgb(10, 168, 241);
+            padding: 20px;
+        }
+
+        .rsidebar-content-style {
+            grid-area: rsidebar;
+            background-color: rgb(127, 232, 178);
+            padding: 20px;
+        }
+
+        .footer-content-styles {
+            grid-area: footer;
+            background-color: brown;
+            text-align: center;
+            padding: 15px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="grid-container">
+
+    <header class="header-content-styles">
+        <h1>My Portfolio</h1>
+        <p>Web Developer | Designer | Creator</p>
+    </header>
+
+    <main class="main-content-style">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is a sample layout using CSS Grid. Check out my work below!</p>
+
+        <section class="projects">
+            <div class="project-item">Project 1</div>
+            <div class="project-item">Project 2</div>
+            <div class="project-item">Project 3</div>
+            <div class="project-item">Project 4</div>
+            <div class="project-item">Project 5</div>
+            <div class="project-item">Project 6</div>
+        </section>
+    </main>
+
+    <aside class="Lsidebar-content-style">
+        <h3>Contact Me</h3>
+        <p>Feel free to reach out!</p>
+    </aside>
+
+    <aside class="rsidebar-content-style">
+        <h3>Contact Me</h3>
+        <p>Feel free to reach out!</p>
+    </aside>
+
+    <footer class="footer-content-styles">
+        <p>© 2026 My Portfolio. ALL rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
