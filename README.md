@@ -19,4 +19,4 @@ This project is created to understand:
 ## 🛠️ Technologies
 
 - HTML5 
-- Web Browser (Chrome / Firefox / Edge / Safari).
+- Web Browser (Chrome / Firefox / Edge).
